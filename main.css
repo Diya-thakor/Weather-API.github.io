@@ -1,0 +1,103 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #293251;
+}
+
+.container {
+    height: 400px;
+    width: 300px;
+    background-color: #F4F9FF;
+    border-radius: 15px;
+}
+
+.title {
+    font-size: x-large;
+    color: darkblue;
+}
+
+.notification {
+    background-color: #f8d7da;
+    color: #721c24;
+    font-size: medium;
+}
+
+.weather-container {
+    width: 300px;
+    height: 260px;
+    background-color: #8fa0b4;
+}
+
+.weather-icon {
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img {
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value {
+    width: 300px;
+    height: 60px;
+}
+
+.temperature-value p {
+    color: #e3e5eb;
+    font-size: larger;
+    /* text-align: center; */
+    cursor: pointer;
+}
+
+.description p {
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location p {
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+/* function getResultByCity(city) {
+    let api_city = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`;
+    fetch(api_city)
+        .then(function (response) {
+            //take the response given by api
+            let data = response.json();
+            console.log(data);
+            return data;
+        })
+        .then(function assignValObject(data) {
+            weather.tempreture.value = Math.floor(data.main.temp - KELVIN);
+            weather.description = data.weather[0].description;
+            weather.icon = data.weather[0].icon;
+            weather.location = data.name;
+            weather.country = data.sys.country;
+            weather.tempreture.min_ = Math.floor(data.main.temp - KELVIN);
+            weather.tempreture.max_ = Math.floor(data.main.temp - KELVIN);
+            display_weather();
+        });
+    function display_weather() {
+        loc.text(weather.location);
+        icon.html(`<img src="image/${weather.icon}.png">`);
+        desc.text(weather.description);
+        temp.text(`${weather.tempreture.value}°C`);
+        min_max_temp.text(`${weather.tempreture.min_}°C / ${weather.tempreture.max_}°C`);
+    }
+}
+// get city from user
+let city = document.querySelector('#search');
+city.addEventListener('keydown', function (event) {
+    if (event.keyCode == 13) {
+        getResultByCity(city.value);
+    }
+}); */
